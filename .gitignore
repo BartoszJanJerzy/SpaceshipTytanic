@@ -5,3 +5,4 @@ html
 .html
 .ipynb_checkpoint
 .ipynb_checkpoints
+__pycache__
