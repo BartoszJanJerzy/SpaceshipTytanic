@@ -3,4 +3,5 @@ html
 .csv
 .ftr
 .html
-.ipynb_checkpoint/
+.ipynb_checkpoint
+.ipynb_checkpoints
