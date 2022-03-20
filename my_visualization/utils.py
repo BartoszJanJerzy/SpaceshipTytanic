@@ -40,3 +40,24 @@ def show_histogram(col: str, df: pd.DataFrame):
 def show_log_transform(df: pd.DataFrame, col: str):
     df_graph = df[col].apply(lambda x: np.log(x) if x>0 else x)
     show_histogram(col, df_graph)
+
+
+def show_segments(df: pd.DataFrame, colors: list, cols: list, height: int):
+    fig = go.Figure()
+
+    for i in range(3):
+        fig.add_trace(go.Bar(
+            name = i,
+            x = df.loc[i][1:],
+            y = cols,
+            orientation = 'h',
+            marker_color = colors[i]
+        ))
+
+
+    fig.update_layout(
+        title = 'Segments visualization',
+        height = height
+    )
+
+    fig.show(render='notebook')
