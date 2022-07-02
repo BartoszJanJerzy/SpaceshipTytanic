@@ -10,3 +10,4 @@ Scripts, notebooks, modules:
 * `02_clustering.ipynb` - KMeans use to get new feature
 * `03_lazy_predict.ipynb` - searching for best models
 * `04_adaboost_optimization.ipynb` - hyperparameter tuning and feature selection for adaboost model
+* `05_svc_optimization.ipynb` - hyperparameter tuning and feature selection for SVC model
