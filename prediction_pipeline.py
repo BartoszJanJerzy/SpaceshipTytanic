@@ -24,12 +24,19 @@ class PredictionPipeline:
     ):  
         self.data = PreprocessedData.validate(data)
         self.visible = visible
-        self.final_proba: float = None
+        self.__final_proba: float = None
+        self.__prediction_ready = False
     
-    def get_final_prediction(self) -> float:
+    def get_prediction(self) -> float:
+        error_text = 'Run run_prediction() before you get prediction!'
+        assert self.__prediction_ready, error_text
+        return self.final_proba[0][0]
+
+    def run_model(self):
+        self.__prediction_ready = False
         self._pre_pipeline()
         self._predict_final_nn()
-        return self.final_proba
+        self.__prediction_ready = True
 
     def _pre_pipeline(self):
         self._predict_kmeans()
