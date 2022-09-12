@@ -92,10 +92,13 @@ class PredictionForm:
     def result(self):
         return html.Div(
             id='probability-graph-div',
-            children=dcc.Graph(
-                id='probability-graph',
-                figure=get_probability_graph()
-            )
+            children=[
+                html.P("The probability that you'll be rescued from a crash is: ..."),
+                dcc.Graph(
+                    id='probability-graph',
+                    figure=get_probability_graph()
+                )
+            ]
         )
 
     def __get_number_input(

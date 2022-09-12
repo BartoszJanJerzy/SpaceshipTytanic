@@ -49,9 +49,9 @@ class Home:
                 ),
                 html.A(
                     className=link_class,
-                    id='info-section-link',
+                    id='code-link',
                     children='See the code',
-                    href='#info'
+                    href='https://github.com/BartoszJanJerzy/SpaceshipTytanic'
                 ),
             ]
         )

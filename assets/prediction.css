@@ -36,6 +36,13 @@ label {
     transition: 0.5s;
 }
 
+#probability-graph-div P {
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(152, 193, 217);
+}
+
 .bold {
     font-weight: bold;
 }

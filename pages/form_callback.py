@@ -161,9 +161,10 @@ class FormCallback:
                 raise PreventUpdate
 
             fig = get_probability_graph(data, final)
+            text = html.P(f"The probability that you'll be rescued from a crash is: {round(final, 2)*100}%")
             graph = dcc.Graph(id='probability-graph', figure=fig)
 
-            return graph
+            return [text, graph]
 
     def __prepare_data(self, data: dict) -> pd.DataFrame:
         def check_setup(value: str, key: str, data: dict) -> bool:
