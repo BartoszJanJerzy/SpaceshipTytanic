@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: rgb(41, 50, 65); */
+    background-color: black !important;
+    font-weight: lighter !important;
+}
+
+.flex-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,41 @@
+#prediction {
+    /* margin-top: 10px; */
+    min-height: 950px;
+    /* border: 1px solid red; */
+}
+
+.form-element {
+    margin-bottom: 10px;
+}
+.form-element-number {
+    margin: 5px;
+    width: 150px;
+}
+.form-element-button {
+    width: 100%;
+    margin: 5px auto;
+}
+
+#form {
+    /* width: 30%; */
+    display: block;
+    padding:5px 70px 5px 70px;
+    color: rgb(224, 251, 252);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+label {
+    margin-right: 3px;
+}
+
+#probability-graph-div {
+    margin: 50px;
+    padding: 5px 10px 5px 10px;
+    min-width: 400px;
+    width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+}
+
+.bold {
+    font-weight: bold;
+}

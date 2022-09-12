@@ -16,6 +16,7 @@ class PredictionPipeline:
     FINAL_FEATURES = ['ada_boost', 'mean', 'lgbm', 'neural', 'svc', 'segment',
     'CryoSleep', 'Spa', 'RoomService', 'VRDeck', 'FoodCourt', 'ShoppingMall', 'Europa',
     'Age', 'TRAPPIST-1e','PSO J318.5-22', 'Mars', 'VIP', 'is_g734s']
+    PROBAS_COLS = ['ada_boost', 'lgbm', 'svc', 'neural', 'mean']
 
     def __init__(
         self,
@@ -24,7 +25,6 @@ class PredictionPipeline:
     ):  
         self.data = PreprocessedData.validate(data)
         self.visible = visible
-        self.__final_proba: float = None
         self.__prediction_ready = False
     
     def get_prediction(self) -> float:
