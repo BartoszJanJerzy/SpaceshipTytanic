@@ -1,6 +1,6 @@
 import plotly.graph_objects as go
 import plotly.io as pio
-from assets.style import blue_2
+from assets.style import orange
 
 
 
@@ -38,7 +38,7 @@ def get_probability_graph(
         x=[trace],
         y=[round(final_proba, 2)],
         text=[round(final_proba, 2)],
-        marker_color=blue_2,
+        marker_color=orange,
     ))
 
     for trace, value in data.items():

@@ -20,7 +20,6 @@
     /* width: 30%; */
     display: block;
     padding:5px 70px 5px 70px;
-    color: rgb(224, 251, 252);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 label {
@@ -40,7 +39,6 @@ label {
     font-size: 30px;
     margin: 0px;
     padding: 0px;
-    color: rgb(152, 193, 217);
 }
 
 .bold {

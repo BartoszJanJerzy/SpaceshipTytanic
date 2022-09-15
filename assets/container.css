@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-weight: lighter !important;
+    color: rgb(250, 250, 250);
 
     /* background-color: black !important; */
     background: linear-gradient(-45deg, black, rgb(61, 90, 128), rgb(41, 50, 65), rgb(152, 193, 217));
