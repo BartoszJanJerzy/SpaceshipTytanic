@@ -161,7 +161,7 @@ class FormCallback:
                 raise PreventUpdate
 
             fig = get_probability_graph(data, final)
-            text = html.P(f"The probability that you'll be rescued from a crash is: {round(final, 2)*100}%")
+            text = html.P(f"The probability that you'll be rescued from a crash is: {round(final *100, 2)}%")
             graph = dcc.Graph(id='probability-graph', figure=fig)
 
             return [text, graph]
