@@ -1,7 +1,7 @@
 import dash
 from assets.style import external_stylesheets
-from pages.container import Container
-from pages.form_callback import FormCallback
+from app_pages.container import Container
+from app_utils.form_callback import FormCallback
 
 # _______________________________________________________________________
 # APP
@@ -20,4 +20,4 @@ app.layout = container.get_page()
 FormCallback(app).run_callbacks()
 
 if __name__ == '__main__':
-    app.run_server(debug=True) 
+    app.run_server(debug=False)
