@@ -1,7 +1,7 @@
 from dash import html, dcc
 import dash_bootstrap_components as dbc
 from assets.style import flex_div
-from pages.utils import get_probability_graph
+from app_utils.probas_graph import get_probability_graph
 
 
 

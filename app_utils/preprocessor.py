@@ -1,5 +1,5 @@
 import pandas as pd
-from data_validation import RawData
+from app_utils.data_validation import RawData
 
 
 class Preprocessor:

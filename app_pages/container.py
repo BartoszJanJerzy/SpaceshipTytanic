@@ -1,7 +1,7 @@
 from dash import html, dcc
 from assets.style import flex_div, style
-from pages.home import Home
-from pages.prediction_form import PredictionForm
+from app_pages.home import Home
+from app_pages.prediction_form import PredictionForm
 
 class Container:
 

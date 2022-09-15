@@ -6,16 +6,16 @@ import pandas as pd
 import os
 import pickle
 from plotly.graph_objects import Figure
-from data_validation import RawData, PreprocessedData
-from preprocessor import Preprocessor
-from prediction_pipeline import PredictionPipeline
-from pages.utils import get_probability_graph
+from app_utils.data_validation import RawData
+from app_utils.preprocessor import Preprocessor
+from app_utils.prediction_pipeline import PredictionPipeline
+from app_utils.probas_graph import get_probability_graph
 
 
 
 class FormCallback:
 
-    MODELS_PATH = os.path.join(os.getcwd(), 'models', 'values.pickle')
+    MODELS_PATH = os.path.join('models', 'values.pickle')
 
     def __init__(self, app: dash.Dash):
             self.app = app

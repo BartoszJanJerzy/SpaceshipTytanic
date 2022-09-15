@@ -1,7 +1,7 @@
 import os
 import pickle
 import pandas as pd
-from data_validation import PreprocessedData
+from app_utils.data_validation import PreprocessedData
 import tensorflow as tf
 
 
@@ -9,7 +9,7 @@ class PredictionPipeline:
     '''
     Loads & uses models, makes endemble data and retrun final prediction
     '''
-    MODELS_PATH = os.path.join(os.getcwd(), 'models')
+    MODELS_PATH = os.path.join('models')
     STANDARD_FEATURES = ['is_g734s', 'CryoSleep', 'VIP', 'Europa', 'Mars', 'PSO J318.5-22',
     'TRAPPIST-1e', 'Age', 'RoomService', 'FoodCourt', 'ShoppingMall', 'Spa', 'VRDeck',
     'segment']
