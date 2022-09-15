@@ -41,8 +41,8 @@ background_path = os.path.join(
 encoded_background = base64.b64encode(open(background_path ,"rb").read())
 
 style={
-    'background-image': f'url(data:image/png;base64,{encoded_background.decode()}',
-    'background-repeat':'no-repeat',
-    'background-attachment':'fixed',
-    'background-height':'100%'
+    # 'background-image': f'url(data:image/png;base64,{encoded_background.decode()}',
+    # 'background-repeat':'no-repeat',
+    # 'background-attachment':'fixed',
+    # 'background-height':'100%'
 }

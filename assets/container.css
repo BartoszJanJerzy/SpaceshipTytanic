@@ -1,9 +1,12 @@
 body {
     margin: 0px;
     padding: 0px;
-    /* background-color: rgb(41, 50, 65); */
-    background-color: black !important;
     font-weight: lighter !important;
+
+    /* background-color: black !important; */
+    background: linear-gradient(-45deg, black, rgb(61, 90, 128), rgb(41, 50, 65), rgb(152, 193, 217));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 .flex-div {
@@ -11,4 +14,18 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
