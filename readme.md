@@ -5,6 +5,9 @@ Make /data dir with data from kaggle (https://www.kaggle.com/c/spaceship-titanic
 
 Modules:
 * `my_utils/` - helpful scripts
+* `app_pages` - pages for dash app
+* `app_utils` - scripts used in dash app
+* `assets` - styling scripts for dash app
 
 Notebooks:
 * `00_install.ipynb` - notebook with individual instalations 
